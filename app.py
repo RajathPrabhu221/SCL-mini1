@@ -12,7 +12,7 @@ def home_page():
 
 @app.route('/antonyms')
 def antonyms():
-	return render_template('antonym.html')
+	return render_template('Antonym.html')
 
 @app.route('/synonyms')
 def synonyms():
