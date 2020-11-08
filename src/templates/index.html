@@ -4,7 +4,7 @@
 	<title>AYUSHEER</title>
 	<meta charset="UTF-8">
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	 <link rel="stylesheet" type="text/css" href="../static/styles/style.css">
+	 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css') }}">
 </head>
 <body>
 	<section class="imgbg">
@@ -16,7 +16,7 @@
 	
 	<section class="nav">
 	<nav class="topnav" id="mytopnav">
-		<a href="index.html"><b>Home</b></a>
+		<a href="{{ url_for('templates', filename='Antonym.html') }}"><b>Home</b></a>
 		<a href="Antonym.html"><b>Antonym</b></a>
 		<a href="synonyms.html"><b>Synonym</b></a>
 		<a href="report.html"><b>Report</b></a>
@@ -30,5 +30,11 @@
         </p>
     </div>
 </body>
+    <footer>
+        <div><b>&copy; Ayusheer, 2020</b></div>
+        <a href="mailto:nshenoyv@gmail.com"><b>Contact US</b></a>
+        <center><img src="../static/images/WKC.png" alt= "WKC logo"></center>
+    </footer>
+
 
 </html>
