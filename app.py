@@ -24,11 +24,10 @@ def synonyms():
 def report():
     return render_template('report.html')
 
-@app.route("/synans")
-def synans():
-	params = {'api_key': 'aa714afb26mshadc5a2c5d8fe45cp1e76b1jsn7282425dc7b5'}
-	r=requests.get('wordsapiv1.p.rapidapi.com',params=params)
-	pdb.run()
+@app.route('/answer')
+def index():
+    return render_template('output.html', variable='12345')
+
 
 
 	
