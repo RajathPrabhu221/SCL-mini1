@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  	<meta charset="utf8" lang="en">
-  	<title>Synonyms</title>
-  	<link rel="stylesheet" type="text/css" href="../static/styles/style.css">
-  	<link rel="stylesheet" type="text/css" href="../static/styles/style2.css">
+	<title>Answer</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/style.css') }}">
 </head>
 <body>
 	<section class="imgbg">
 		<img class="img1" src="../static/images/Ayusheer logo.png" alt="ayusheer logo">
 		<center><h1>Wordigo</h1></center>
 	    <img class="img2" src="../static/images/Sushiksha.png" alt="sushiksha logo">
+	    
 	</section>
 	
 	<section class="nav">
@@ -19,24 +19,16 @@
 		<a href="Antonym.html"><b>Antonym</b></a>
 		<a href="synonyms.html"><b>Synonym</b></a>
 		<a href="report.html"><b>Report</b></a>
-	</nav>
+			</nav>
     </section>
+    
 
-	<center>
-			<form method="POST" action="">
-				<input type="text" placeholder="Type the word"><br>
-				<input type="Submit" placeholder="Submit" onclick="output()">
-			</form>
-	</center>
-	<script type="text/javascript">
-		function output(){
-			window.location.href="output.html";
-		}
-	</script>
-	<footer>
+    <footer>
         <div><b>&copy; Ayusheer, 2020</b></div>
         <a href="mailto:nshenoyv@gmail.com"><b>Contact US</b></a>
         <center><img src="../static/images/WKC.png" alt= "WKC logo"></center>
     </footer>
+
+
 </body>
 </html>
